@@ -24,7 +24,7 @@ public class FoodApi {
 	@Autowired
 	private FoodService foodService;
 
-	@GetMapping("/foods")
+	@GetMapping("/foodview")
 	public List<FoodView> getFoods() {
 		return foodService.getAllFoods();
 	}
@@ -59,7 +59,7 @@ public class FoodApi {
 	}
 	
 	
-	// #################
+	// ###############################
 	
 	@DeleteMapping("/food/{foodId}")
 	public void deleteFood(
